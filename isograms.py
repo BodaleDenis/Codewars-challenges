@@ -23,7 +23,7 @@ def is_isogram(string):
     else:
         return False
 
-# TEST FUNCTIONALITY
+# Driver program
 
 assert is_isogram("moOse") == False
 assert is_isogram("abcdefg") == True

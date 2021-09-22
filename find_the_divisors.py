@@ -34,10 +34,8 @@ def divisors(integer):
     else:
         return str(integer) + " is prime"
 
+# Driver program
 
-
-
-# TEST FUNCTIONALITY
 primality_check_result = "13 is prime"
 divisors_12 = [2, 3, 4, 6]
 divisors_15 = [3, 5]

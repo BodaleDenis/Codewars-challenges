@@ -19,6 +19,19 @@ Error checking for text strings or other invalid inputs is not required, only va
 """
 
 def narcissistic(value):
+    """
+    Difficulty : Easy
+
+    Verify an given number N if every digit to the power of how many digits are is equal to the number.
+    Let's say N = abcd , where a,b,c,d are digits
+    digits of N = 4 => if a^4 + b^4 + c^4 + d^4 = N => N is narcissistic 
+
+    Args:
+        value (integer) : input integer
+
+    Returns:
+        bool : if number have narcissistic properties
+    """
     digits = len(str(value))
     every_digit = [int(digit)**digits for digit in str(value)]
     narcissistic_test = sum(every_digit)
@@ -27,7 +40,7 @@ def narcissistic(value):
     else:
         return False
 
-# TEST FUNCTIONALITY
+# Driver program
 
 assert narcissistic(153) == True
 assert narcissistic(7) == True

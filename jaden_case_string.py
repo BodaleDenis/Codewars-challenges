@@ -25,7 +25,7 @@ def to_jaden_case(string):
     return final_string
 
 
-#TEST FUNCTIONALITY
+# Driver program
 
 string_test = "How can mirrors be real if our eyes aren't real"
 solution_result = "How Can Mirrors Be Real If Our Eyes Aren't Real"

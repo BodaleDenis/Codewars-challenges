@@ -31,10 +31,10 @@ def find_uniq(arr):
     frequency = Counter(arr)
     for key, value in frequency.items():
         if value == 1:
-            return key
+            return key   
     
-    
-# TEST FUNCTIONALITY
+# Driver program
+
 test_list1 = [1, 1, 1, 2, 1, 1]
 test_list2 = [0, 0, 0.55, 0, 0]
 assert find_uniq(test_list1) == 2
